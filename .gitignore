@@ -1,0 +1,24 @@
+# Terraform — directorios de plugins y caché (binarios grandes)
+**/.terraform/
+
+# Archivos de estado (pueden contener secretos)
+*.tfstate
+*.tfstate.backup
+
+# Variables con valores sensibles
+*.tfvars
+!*.tfvars.example
+
+# Archivos de override locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Crash logs
+crash.log
+crash.*.log
+
+# CLI config
+.terraformrc
+terraform.rc
